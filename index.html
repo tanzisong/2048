@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+
+	<meta charset="UTF-8">
+	<title>2048欢迎您</title>
+	<script src="jquery-3.2.0.min.js"></script>
+	<script src="index.js"></script>
+</head>
+<body>
+<!--
+creat();创建一个2,4放在panel[][]
+上下左右函数
+isOver()判断是否结束游戏,boolean返回值
+restart()清空数组 改变div
+Changediv()将已经存在panel里的数据(不含0)添加到div中
+
+
+-->
+	<p>分数:<span id="score"></span></p>
+	<div id="main">
+		<!--背景单元格-->
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+		<div  class="grid"></div>
+
+		<!--前景单元格-->
+		<div id="c00" class="cell"></div>
+		<div id="c01" class="cell"></div>
+		<div id="c02" class="cell"></div>
+		<div id="c03" class="cell"></div>
+
+		<div id="c10" class="cell"></div>
+		<div id="c11" class="cell"></div>
+		<div id="c12" class="cell"></div>
+		<div id="c13" class="cell"></div>
+
+		<div id="c20" class="cell"></div>
+		<div id="c21" class="cell"></div>
+		<div id="c22" class="cell"></div>
+		<div id="c23" class="cell"></div>
+
+		<div id="c30" class="cell"></div>
+		<div id="c31" class="cell"></div>
+		<div id="c32" class="cell"></div>
+		<div id="c33" class="cell"></div>
+	</div>
+</body>
+</html>

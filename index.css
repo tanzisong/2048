@@ -1,0 +1,43 @@
+
+body{
+	margin:0;
+	padding:0;
+}
+#main{
+	width:480px;
+	height:480px;
+	margin: 0 auto;
+	background-color: #00a8ff;
+	border-radius:10px;
+	position:relative;
+}
+.grid,.cell{
+	width:100px;
+	height:100px;
+	border-radius:6px;
+}
+.grid{
+	float:left;
+	margin:16px 0 0 16px;
+	background-color:#ccc0b3;
+}
+.cell{
+	text-align:center;
+	line-height:100px;
+	color: #ff004d;
+	background: #e6ffea;
+	font-size:60px;
+	position:absolute;
+	font-family:Arial;
+}
+/*每一行拥有同样的top
+	  每一列拥有同样的left*/
+#c00,#c01,#c02,#c03{top:16px;}
+#c00,#c10,#c20,#c30{left:16px;}
+#c10,#c11,#c12,#c13{top:132px;}
+#c01,#c11,#c21,#c31{left:132px;}
+#c20,#c21,#c22,#c23{top:248px;}
+#c02,#c12,#c22,#c32{left:248px;}
+#c30,#c31,#c32,#c33{top:364px;}
+#c03,#c13,#c23,#c33{left:364px;}
+p{width:480px;margin:0 auto;font-family:Arial;font-weight:bold;font-size:40px;padding-top:15px;}
